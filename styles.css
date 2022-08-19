@@ -1,0 +1,480 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.main-body {
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    height: 100vh;
+    color: white;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    /* background-color: lightblue;  */
+    width: 100px;
+    height: 100vh;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+
+    position: fixed;
+    right: 0;
+}
+
+.nav-icons {
+    padding: 10px 0px;
+}
+
+.nav-icons:hover {
+    transform: scale(1.08);
+    transition: 0.4s ease;
+}
+
+.nav-icons:active {
+    transition: 0.8s ease;
+}
+
+.main-container {
+    width: 100%;
+    font-family: 'leixodemo';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.main-container h1 {
+    font-size: 180px;
+    color: #0f0;
+    margin: 0;
+    padding: 0;
+    margin-left: 50px;
+}
+
+.main-container .sub-title {
+    background-color: #0f0;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    font-family: 'adam_lightlight';
+    font-size: 32px;
+    padding: 5px 0px;
+    padding-left: 128px;
+    
+}
+
+.main-container .sub-title h3 {
+    padding-right: 10px;
+    margin: 0px;
+}
+
+.swipe {
+    justify-self:center;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.swipe img {
+    animation: MoveUpDown 1.5s linear infinite;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Project Page CSS*/
+
+.main-container-1 {
+    width: 100%;
+    font-family: 'leixodemo';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+} 
+
+.main-container-1 h1 {
+    font-size: 80px;
+    color: #0f0;
+    margin-bottom: 80px;
+    margin-top: 0px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10%;
+    font-family: 'adam_lightlight';
+}
+
+ .project-card.unactive {
+    display: none;
+} 
+
+.project-card.active {
+    margin: 0 60px;
+    text-decoration: none;
+    color: white;
+}
+
+.project-card:hover {
+    transform: scale(1.04);
+    transition: 0.4s ease;
+}
+
+.project-card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.project-card h2 {
+    font-family: 'adam_boldbold';
+}
+
+.arrow-projects {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.arrow-projects img{
+    width: 20px;
+    padding: 0px 15px;
+}
+
+.arrow-projects a img:hover {
+    transform: scale(1.06);
+    transition: 0.2s ease;
+}
+
+/*  About Me CSS  */
+
+.about-me-para {
+    font-family: 'adam_lightlight';
+    margin: 0 25%;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/*  Contact CSS  */
+
+.main-container-2 {
+    width: 100%;
+    font-family: 'leixodemo';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+} 
+
+.main-container-2 h1 {
+    font-size: 80px;
+    color: #0f0;
+    margin-bottom: 80px;
+    margin-top: -100px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10%;
+    height: 35vh;
+    justify-content: center;
+}
+
+.contact-container .left {
+    font-family: 'adam_lightlight';
+    font-size: 18px;
+    font-weight: 600px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 60px;
+    margin-right: 40px;
+    border-right: 2px solid #0f0;
+    align-content: center;
+    justify-content: center;
+}
+
+.contact-container .left p{
+    text-align: left;
+    
+}
+
+.connect-icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.connect-icon {
+    display: flex;
+    flex-direction: row; 
+    background-color: #fff;
+    padding: 8px 20px;
+    margin: 0px 20px;
+    border-radius: 12px;
+    text-align: center;
+    justify-self: center; 
+}
+
+.connect-icon:hover {
+    transform: scale(1.04);
+    transition: 0.4s ease;
+}
+
+.connect-icons-container a{
+    text-decoration: none;
+    text-align: right;
+    font-weight: 600;
+    color: black;
+    margin: 0;
+}
+
+.connect-icons-container a p{
+    margin: auto;
+    padding: 0px 5px;
+    padding-top: 3px;
+}
+
+.connect-icon img {
+    width: 26px;
+    height: 26px;
+}
+
+.contact-container .right {
+    width: 50%;
+    text-align: left;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+}
+
+.right form input, .right form textarea{
+    border: 1px solid #0f0;
+    width: 80%;
+    background-color: black;
+    color: white;
+    padding: 8px 20px;
+    font-family: 'adam_lightlight';
+    font-size: 16px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.right form input:focus, .right form textarea:focus{
+    outline: none;
+}
+
+#msg-box {
+    /* height: 100px; */
+    padding-bottom: 60px;
+}
+
+#send-btn {
+    background-color: #0f0;
+    color: black;
+    font-weight: 800;
+    justify-items: center;
+    width: 100px;
+    margin: auto;
+    margin-top: 15px;
+    border: 1px solid #0f0
+}
+
+#send-btn:hover {
+    transform: scale(1.05);
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+/*   Footer CSS   */
+
+footer {
+    background-color: black;
+    font-family: 'adam_lightlight';
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+    color: white;
+    padding-bottom: 20px;
+}
+
+footer .top-section {
+    display:flex;
+    flex-direction: row;
+}
+
+footer .top-section .info {
+    width: 50%;
+    padding-right: 100px
+}
+
+footer .top-section .follow {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    justify-items: flex-start;
+    align-content: flex-start;
+}
+
+footer .top-section .follow .socials {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+footer .top-section .follow .socials a{
+    background-color: white;
+    border-radius: 8px;
+    margin: 0 10px;
+    padding: 2px;
+    padding-bottom: 0px;
+}
+
+footer .top-section .follow .socials a:hover {
+    transform: scale(1.05);
+    transition: 0.4s ease;
+}
+
+footer .top-section .follow .socials a img{
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+footer .copyright {
+    background-color: black;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+footer .copyright p {
+    margin: 0;
+    padding: 0;
+    padding-right: 5px;
+    
+    
+}
+
+footer .copyright a {
+    text-decoration: underline;
+    color: white;
+}
+
+/*   Porject Page CSS   */
+
+.main-container-project{
+    width: 100%;
+    font-family: 'leixodemo';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.project-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.main-container-project h1 {
+    font-size: 60px;
+    color: #0f0;
+    margin-bottom: 50px;
+    margin-top: -100px;
+}
+
+.project-container .left{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 80px;
+    margin-right: 20px;
+    padding: 0 20px;
+}
+
+.project-container .right{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 20px;
+    margin-right: 80px;
+    align-items: center;
+}
+
+.project-container .left h2{
+    font-family: 'adam_boldbold';
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.project-container .left p{
+    font-family: 'adam_lightlight';
+    font-size: 18px;
+    text-align: left;
+}
+
+.project-container .right img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+.project-buttons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.project-buttons a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    align-items: center;
+    justify-items: center;
+    height: 30px;
+}
+
+.project-buttons a p{
+    margin-left: 10px;
+}
